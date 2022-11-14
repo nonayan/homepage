@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(208, 237, 247);
+    position: relative;
+    height: 100vh;
+    cursor: url(チーズ.png), auto;
+}
+
+/* Webフォント読み込み */
+@font-face {
+	font-family: PixelMplus10-Regular;
+	src: url('font/PixelMplus10-Regular.ttf') format("truetype");
+}
+
+#stalker{
+    position: fixed;
+    margin: 0px 0 0 50px;/*真ん中にくるようにマイナスマージンで調整*/
+    z-index: 1;/*カーソルの後ろに来るように*/
+    pointer-events: none;/*クリックできなくなるのを防ぐため。noneで対応*/
+    opacity: 0;
+}
+
+p{
+    font-family: PixelMplus10-Regular;
+    font-size: 40px;
+    text-align: center;
+    color: black;
+    padding-top: 150px;
+    letter-spacing: .5em;
+    word-break : break-all;
+}
+
+.TextTyping span {
+	display: none;
+}
+
+.TextTyping{
+    font-family: PixelMplus10-Regular;
+}
+/*文字列後ろの線の設定*/
+.TextTyping::after {
+    content: "|";
+   animation: typinganime .8s ease infinite;
+}
+
+@keyframes typinganime{
+   from{opacity:0}
+   to{opacity:1}
+}
+
+.hed {
+    font-family: PixelMplus10-Regular;
+    margin: 1% auto;
+    position: absolute;
+    padding:  20px;
+    right:  50px;
+    color:black;
+}
+
+/*横並び*/
+.header ul {
+    display: flex;
+}
+/*分割*/
+.header ul li {
+    width: 150px;
+    text-align: center;
+}
+
+.header ul li a {
+    display: block;
+}
+
+/*コンテナ*/
+
+.container_service .service_block {
+    display: flex;
+    /*スペースに対して均等に割り振る*/
+    justify-content: space-between;
+}
+
+.container_service .service {
+    width: 380px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.container_service h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.container_service .service img {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    width: 220px;
+    height: 320px;
+    width: 100%;
+    transition-duration: 0.5s;
+}
+
+.container_service .service:hover img {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.container_service .service .ttl {
+    font-family: PixelMplus10-Regular;
+    margin-top: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color:black;
+}
+
+.fade{
+    animation: zoomIn 5.8s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+
+}
+@keyframes zoomIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+}
