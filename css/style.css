@@ -7,6 +7,11 @@ body{
     cursor: url(チーズ.png), auto;
 }
 
+.wrapper .container{
+    max-width:5000px;
+    margin:auto auto;
+}
+
 /* Webフォント読み込み */
 @font-face {
 	font-family: PixelMplus10-Regular;
@@ -100,10 +105,11 @@ p{
     height: 320px;
     width: 100%;
     transition-duration: 0.5s;
+    cursor: url(チーズ.png), auto;
 }
 
 .container_service .service:hover img {
-    transform: scale(1.1);
+    transform: scale(1.2);
     transition-duration: 0.5s;
 }
 
