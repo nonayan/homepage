@@ -124,7 +124,7 @@
                 </div>
             </form>
             <div class="im">
-                    <img src="img/お問い合わせ.png" alt=""><br>
+                    <img src="img/inquiry.png" alt=""><br>
                     <div class="img_text"></div>
             </div>
         </div>

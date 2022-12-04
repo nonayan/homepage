@@ -2,9 +2,9 @@
 
 body{
     background-color: rgb(208, 237, 247);
-    position: relative;
     height: 100vh;
-    cursor: url(チーズ.png), auto;
+    position: relative;
+    cursor: url(tize.png), auto;
 }
 
 .wrapper .container{
@@ -105,7 +105,7 @@ p{
     height: 320px;
     width: 100%;
     transition-duration: 0.5s;
-    cursor: url(チーズ.png), auto;
+    cursor: url(tize.png), auto;
 }
 
 .container_service .service:hover img {

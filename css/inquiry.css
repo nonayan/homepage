@@ -4,7 +4,7 @@ body{
     background-color:aqua;
     height: 100vh;
     position: relative;
-    cursor: url(鉛筆.png), auto;
+    cursor: url(pencil.png), auto;
 }
 
 .hed{

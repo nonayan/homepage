@@ -4,7 +4,7 @@ body{
     background-color:aqua;
     height: 100vh;
     position: relative;
-    cursor: url(鍵.png), auto;
+    cursor: url(key.png), auto;
 }
 
 .wrapper .container{
