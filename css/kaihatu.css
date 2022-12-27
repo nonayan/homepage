@@ -2,27 +2,10 @@
 
 body{
     background-color:aqua;
+    width: 1440px;
     height: 100vh;
     position: relative;
-    cursor: url(green.png), auto;
-}
-
-.hed{
-    display: flex;
-    font-family: PixelMplus10-Regular;
-    text-decoration: underline;
-    font-size: 35px;
-    padding-top: 30px;
-}
-
-.top{
-    text-align: left;
-    margin-left:80px;
-    margin-right: 450px;
-}
-
-.title{
-    text-align: center;
+    cursor: url(blue.png), auto;
 }
 
 /* Webフォント読み込み */
@@ -31,46 +14,84 @@ body{
 	src: url('font/PixelMplus10-Regular.ttf') format("truetype");
 }
 
-#stalker{
-    position: fixed;
-    margin: -20px 0 0 60px;/*真ん中にくるようにマイナスマージンで調整*/
-    z-index: 1;/*カーソルの後ろに来るように*/
-    pointer-events: none;/*クリックできなくなるのを防ぐため。noneで対応*/
-    opacity: 0;
+.wrapper .container{
+    max-width: 5000px;
+    margin:auto auto;
+}
+
+.header{
+    display: flex;
+    font-size: 30px;
+    font-family: PixelMplus10-Regular;
+    text-decoration: underline;
+    width: 100%;
+    margin-top: 1%;
+}
+
+.header .title{
+    padding-left: 33%;
+}
+
+.header ul li a{
+    padding-left: 90px;
+}
+
+.container_service{
+    position: absolute;
+    margin: 2% 5% 2% 5%;
+}
+
+.container_service .service{
+    width: 100%;
+    text-align: left;
+}
+
+.container_service h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.container_service .service_block {
+    background-color: antiquewhite;
+    border: 4px solid;
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 0px;
+}
+
+.container_service .service .gazo img{
+    height: 600px;
+    width: 99%;
+    margin: 10px;
+    border: 4px solid;
+}
+
+.container_service .service .explanation{
+    font-family: PixelMplus10-Regular;
+    font-size: 30px;
+    text-size-adjust: 30%;
+    margin: 18px 50px;
+}
+
+.sikaku{
+    margin-top: 2px;
+    border: 3px solid;
+    padding: 1%;
 }
 
 .box{
-    background-color: antiquewhite;
-    margin-top: 30px;
-    margin-left: 80px;
-    margin-right: 80px;
     display: flex;
     justify-content: space-between;
-    border: 4px solid;
-}
-
-.explanation{
-    font-family: PixelMplus10-Regular;
-    padding: 30px 60px 0 0;
-    margin: 10px 50 0 0;
-    font-size: 30px;
-}
-
-.box img{
-    background-color: wheat;
-    margin: 10px 0 10px 10px;
-    width: 700px;
-    height: 600px;
-    border: 4px solid;
-}
-
-.box_2{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
     text-decoration: underline;
     font-family: PixelMplus10-Regular;
     font-size: 30px;
-    margin-right: 80px;
-    margin-left: 80px;
+    margin: 700px 5% 0 5%;
+}
+
+.explanation a:hover img {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    cursor: url(key.png), auto;
 }
