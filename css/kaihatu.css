@@ -5,7 +5,7 @@ body{
     width: 1440px;
     height: 100vh;
     position: relative;
-    cursor: url(blue.png), auto;
+    cursor: url(green.png), auto;
 }
 
 /* Webフォント読み込み */
@@ -88,10 +88,4 @@ body{
     font-family: PixelMplus10-Regular;
     font-size: 30px;
     margin: 700px 5% 0 5%;
-}
-
-.explanation a:hover img {
-    transform: scale(1.2);
-    transition-duration: 0.5s;
-    cursor: url(key.png), auto;
 }

@@ -2,6 +2,7 @@
 
 body{
     background-color:aqua;
+    width: 1440px;
     height: 100vh;
     position: relative;
     cursor: url(pencil.png), auto;
